@@ -1,0 +1,29 @@
+a=int(input("a= "))
+print (a)
+n = int(a/10)
+#print (n)
+m = int(a%10)
+print (m)
+x = int(n/10)
+#print (n)
+c = int(n%10)
+print (c)
+f = int (x%10)
+print (f)
+v = int (x/10)
+print (v)
+result = m*c*f*v
+print  (result)
+
+mylist = [int (123), 'abc', float(123.56), 'xyz']
+mylist.reverse()
+print ("List : ", mylist)
+
+x = 1
+y = 2
+print("x = ", x, "y = ", y)
+x = x+y
+y = x-y
+x = x-y
+print("x = ", x, "y = ", y)
+
