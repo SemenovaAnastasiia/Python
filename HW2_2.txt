@@ -19,11 +19,8 @@ mylist = [int (123), 'abc', float(123.56), 'xyz']
 mylist.reverse()
 print ("List : ", mylist)
 
-x = 1
-y = 2
-print("x = ", x, "y = ", y)
-x = x+y
-y = x-y
-x = x-y
-print("x = ", x, "y = ", y)
+
+x = [4,5,8,5,3,1] 
+a = sorted (x)
+print (a)
 
