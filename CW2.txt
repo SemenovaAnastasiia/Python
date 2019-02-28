@@ -1,0 +1,26 @@
+#print ("a: ")
+#a = int(input ())
+#print ("b: ")
+#b = int(input ())
+#if a>b:
+#    min, max=a,b
+    #print ("a>b")
+#else:
+#    min, max = b,a
+    #print("a<b")
+#st="a={0} is min, b={1} is max".format(min,max)
+#print (st)
+
+
+#if a%2==0:
+#    print ("a parne")
+#else:
+#    print("a ne parne")
+
+n=int(input('n='))
+i = 1
+factorial = 1
+while i <= n:
+    factorial *= i
+    i += 1
+print("n!",n, "=", factorial)
