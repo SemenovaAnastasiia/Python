@@ -1,0 +1,8 @@
+def count_sheeps(arrayOfSheeps):
+    a=0
+    i=0
+    while i < len(arrayOfSheeps):
+            if arrayOfSheeps[i]==True:
+                a+=1
+            i+=1
+    return a
