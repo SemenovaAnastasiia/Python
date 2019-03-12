@@ -1,0 +1,14 @@
+def count_positives_sum_negatives(arr):
+    a = 0
+    suma = 0
+    result = []
+    if not arr:
+        return result
+    for i in arr:
+        if i > 0:
+            a+=1
+        else:
+            suma+=i
+    result.append(a)
+    result.append(suma)
+    return result

@@ -1,0 +1,76 @@
+#Написати функцію, яка знаходить середнє арифметичне значення довільної кількості чисел.
+def seredne_arifm(a, *args):
+    return(a+sum(args)/(1+len(args)))
+print(seredne_arifm(1,2,3))
+
+#Написати функцію, яка повертає абсолютне значення числа
+#import math
+def abs_znach(num):
+    if num>=0:
+        return num
+    else:
+        return -num
+#    return(math.fabs(num))
+print(abs_znach(5))
+
+#Написати функцію, яка знаходить максимальне число з двох чисел, а також в функції використати рядки документації DocStrings.
+def max_chuslo(a, b):
+    """find max number"""
+    return(max(a,b))
+print(max_chuslo(-9,2))
+
+#Написати програму, яка обчислює площу прямокутника, трикутника та кола
+def s_rectangle(a,b):
+    return(a*b)
+def s_triangle(a,h):
+    return(1/2*a*h)
+def s_circle(r):
+    return(3.14*(r**2))
+chose=int(input("input 1 for rectangle or 2 for triangle or 3 for circle: "))
+if chose==1:
+    print(s_rectangle(2,3))
+elif chose==2:
+    print(s_triangle(4,6))
+else:
+    print(s_circle(2))
+
+#Написати функцію, яка обчислює суму цифр введеного числа.
+def suma_cufr(a):
+ #   print (a)
+    n = int(a/10)
+    m = int(a%10)
+ #   print (m)
+    x = int(n/10)
+    c = int(n%10)
+ #   print (c)
+    f = int (x%10)
+ #   print (f)
+    v = int (x/10)
+ #   print (v)
+    result = m+c+f+v
+    return result
+print(suma_cufr(1234))
+
+#Побудувати рекурсивну функцію обчислення чисел Фібоначі до числа введеного користувачем.
+def fibonacci(n):
+    if n <= 3:
+        return n
+    elif n <= 0:
+        print("Plese enter a positive int")
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+print(fibonacci(5))
+
+#Написати програму, яка обчислює дискримінант квадратного рівняння
+import math
+def diskr(a, b, c):
+    d=(b**2)-4*a*c
+    if d>0:
+        x1=(-b + math.sqrt(d)) / (2 * a)
+        x2=(-b - math.sqrt(d)) / (2 * a)
+        return(x1,x2)
+    elif d==0:
+        return(-b / (2 * a))
+    else:
+        return(0)
+print(diskr(a=1, b=-8, c=7))
