@@ -1,0 +1,6 @@
+def list_animals(animals):
+    list = ''
+    r=len(animals)
+    for i in range(r):
+        list += str(i + 1) + '. ' + animals[i] + '\n'
+    return list

@@ -1,0 +1,3 @@
+def double_char(s):
+    my_string = [i*2 for i in s]
+    return "".join(my_string)
